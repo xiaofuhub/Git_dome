@@ -24,3 +24,7 @@ void Test2()
 {
 	printf("revert test2!");
 }
+void test3()
+{
+  printf("revert test3!");
+}
