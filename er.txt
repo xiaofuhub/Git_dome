@@ -4,4 +4,8 @@ fdafdsafdsafdsafdsaf6
 tttttaaaagggggg
 ddddddddddddddddd
 ffffffffffffffffygsrrrt
+<<<<<<< HEAD
 uuuuuu
+=======
+uugggggggggggg
+>>>>>>> master
