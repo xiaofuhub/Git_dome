@@ -3,4 +3,8 @@ JJJrrrrr562o578785rtrtrtrr4554
 fdafdsafdsafdsafdsaf6
 tttttaaaagggggg
 ddddddddddddddddd
+<<<<<<< HEAD
 aaaaaaaaaaaaaa
+=======
+ffffffffffffffffygs
+>>>>>>> master
