@@ -4,9 +4,5 @@ fdafdsafdsafdsafdsaf6
 tttttaaaagggggg
 ddddddddddddddddd
 ffffffffffffffffygsrrrt
-<<<<<<< ours
 uuggggggggggggqqqq
 
-=======
-uuggggggggggggttttttttttttyy
->>>>>>> theirs
