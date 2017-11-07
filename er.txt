@@ -1,1 +1,5 @@
+<<<<<<< ours
 eeeett
+=======
+rrrrr562o578785rtrtrtrr4554545lllllrrr
+>>>>>>> theirs
