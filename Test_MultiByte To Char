@@ -1,0 +1,30 @@
+#include<stdio.h>
+int _tmain(int argc, _TCHAR* argv[])  //
+ char *sStr_Cmd[10] = {0}; 
+ for (int i = 0; i< argc; i++) 
+ {  
+   if(argc <= 1)
+   {
+     printf(" Usge :% ", argv[0]);
+     return 0;
+   }
+   _TCHAR* Str_Cmd = argv[i];  
+   //Unicode转换为ASCII，也即是宽字节转换为单字符，代码    
+   int UnicLen;  
+   UnicLen = ::WideCharToMultiByte(CP_UTF8, NULL, Str_Cmd, wcslen(Str_Cmd), NULL, 0, NULL, NULL);  
+   char*str_ASCII = new char[UnicLen + 1]; 
+   ZeroMemory(str_ASCII, UnicLen + 1);  
+   ::WideCharToMultiByte(CP_UTF8, NULL, Str_Cmd, wcslen(Str_Cmd), str_ASCII, UnicLen, NULL, NULL);  
+   str_ASCII[UnicLen] = '\0'; 
+   /////////    
+   sStr_Cmd[i] = str_ASCII; 
+   return 0;
+  }
+void Test2()
+{
+	printf("revert test2!");
+}
+void test3()
+{
+  printf("revert test3!");
+}
