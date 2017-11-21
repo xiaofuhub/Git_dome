@@ -6,5 +6,10 @@ r
 =======55
 000000000000000000000000000UU
 >>>>>>> theirs444
+<<<<<<< HEAD
 ttt65555
 teststr
+=======
+ttt65
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+>>>>>>> f8f4d2b7f836ac7be785bd01a843332ffb16d485
