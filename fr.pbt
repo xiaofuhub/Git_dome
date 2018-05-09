@@ -3,3 +3,4 @@ appname "fr";
 applib "fr.pbl";
 liblist "fr.pbl";
 type "pb";
+//abc
