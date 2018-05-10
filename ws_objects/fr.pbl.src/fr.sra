@@ -31,8 +31,4 @@ destroy( sqlsa )
 destroy( error )
 destroy( message )
 end on
-<<<<<<< HEAD
-//affv
-=======
-//122222
->>>>>>> efa772cd1146fb76b876d3c85ec598b38da67b19
+5655
