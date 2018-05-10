@@ -31,4 +31,8 @@ destroy( sqlsa )
 destroy( error )
 destroy( message )
 end on
+<<<<<<< HEAD
 gddd
+=======
+45555
+>>>>>>> d7c73397f4437f184d22cc4c0ad503ff9960ea87
