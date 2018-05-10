@@ -1,4 +1,4 @@
-﻿$PBExportHeader$fr.sra
+﻿»¿$PBExportHeader$fr.sra
 $PBExportComments$Generated Application Object
 forward
 global type fr from application
@@ -31,4 +31,4 @@ destroy( sqlsa )
 destroy( error )
 destroy( message )
 end on
-1234
+gggg
