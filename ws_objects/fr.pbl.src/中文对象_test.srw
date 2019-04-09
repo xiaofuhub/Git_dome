@@ -56,8 +56,8 @@ boolean righttoleft = true
 end type
 
 type cb_1 from commandbutton within 中文对象_test
-integer x = 1056
-integer y = 660
+integer x = 1166
+integer y = 740
 integer width = 457
 integer height = 132
 integer taborder = 10
