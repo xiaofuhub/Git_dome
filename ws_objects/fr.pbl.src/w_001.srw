@@ -31,6 +31,7 @@ on w_001.destroy
 destroy(this.cb_1)
 end on
 
+// test0001
 type cb_1 from commandbutton within w_001
 integer x = 919
 integer y = 516
