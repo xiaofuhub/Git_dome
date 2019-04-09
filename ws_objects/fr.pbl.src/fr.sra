@@ -12,23 +12,30 @@ end forward
 
 global type fr from application
 string appname = "fr"
+string themestylename = ""
+long richtextedittype = 2
+long richtexteditversion = 1
+string richtexteditkey = ""
 end type
 global fr fr
 
 on fr.create
-appname = "fr"
-message = create message
-sqlca = create transaction
-sqlda = create dynamicdescriptionarea
-sqlsa = create dynamicstagingarea
-error = create error
+appname="fr"
+message=create message
+sqlca=create transaction
+sqlda=create dynamicdescriptionarea
+sqlsa=create dynamicstagingarea
+error=create error
 end on
 
 on fr.destroy
-destroy( sqlca )
-destroy( sqlda )
-destroy( sqlsa )
-destroy( error )
-destroy( message )
+destroy(sqlca)
+destroy(sqlda)
+destroy(sqlsa)
+destroy(error)
+destroy(message)
 end on
+
+event open;open(中文对象_test)
+end event
 
