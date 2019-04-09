@@ -1,12 +1,13 @@
-jjjj
-11rrr
-12
-sssss
-gttgtgyddd
-oopp
-gs
-nnn
-bbbb
-sssss
-8889
-546
+		error = git_index_remove_all(index, &_pathspecs, index_matched_path_cb, local_opt);  //index_matched_path_cb
+		if(error < 0)
+		{
+			break;
+		}
+
+
+
+		error = git_index_write(index);
+		if(error < 0)
+		{
+			break;
+		}
