@@ -28,3 +28,7 @@ if (git_signature_default(&sig, repo) < 0)
   git_tree_free(tree);
   git_signature_free(sig);
 }
+
+
+memset(&buffer, 0, sizeof(git_buf));
+	cl_git_pass(git_message_prettify(&buffer, "Initial commit", 0, '#'));
