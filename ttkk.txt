@@ -1,13 +1,30 @@
-		error = git_index_remove_all(index, &_pathspecs, index_matched_path_cb, local_opt);  //index_matched_path_cb
-		if(error < 0)
-		{
-			break;
-		}
+static void create_initial_commit(git_repository *repo)
+{
+  git_signature *sig;
+  git_index *index;
+  git_oid tree_id, commit_id;
+  git_tree *tree;
 
+if (git_signature_default(&sig, repo) < 0)
+    fatal("Unable to create a commit signature.",
+          "Perhaps 'user.name' and 'user.email' are not set");
 
+ if (git_repository_index(&index, repo) < 0)
+    fatal("Could not open repository index", NULL);
 
-		error = git_index_write(index);
-		if(error < 0)
-		{
-			break;
-		}
+ if (git_index_write_tree(&tree_id, index) < 0)
+    fatal("Unable to write initial tree from index", NULL);
+
+ git_index_free(index);
+
+ if (git_tree_lookup(&tree, repo, &tree_id) < 0)
+    fatal("Could not look up initial tree", NULL);
+
+ if (git_commit_create_v(
+      &commit_id, repo, "HEAD", sig, sig,
+      NULL, "Initial commit", tree, 0) < 0)
+    fatal("Could not create the initial commit", NULL);
+
+  git_tree_free(tree);
+  git_signature_free(sig);
+}
